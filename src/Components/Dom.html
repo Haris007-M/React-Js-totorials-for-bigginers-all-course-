@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+    <header>Header</header>
+</head>
+
+<body>
+    <h1>Hi This is H1</h1>
+    <div class="col">Hi this is Col-div</div>
+
+
+    <script>
+        const documentelement = document.createElement("h2")
+        documentelement.textContent = ("Hi This is H2")
+        document.querySelector("body").appendChild(documentelement)
+
+        // document.querySelector("body").removeChild(documentelement)
+    </script>
+    
+</body>
+
+</html>
