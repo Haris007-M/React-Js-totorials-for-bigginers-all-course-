@@ -1,5 +1,5 @@
 import React from "react";
-import { useState, useEffect } from "react";
+
 
 export default function Javascript() {
   // ____________________
@@ -354,13 +354,30 @@ export default function Javascript() {
   // --------- continue-------------
 
   // useState Hooks
-  const [count, setCount] = useState(0);
+  // const [count, setCount] = useState(0);
 
-  useEffect(() => {
-    alert(`hi you click ${count} times`);
-    const pakistandiv = document.querySelector("#pakistandiv")
-    pakistandiv.style.color = "red"
-  }, [count])
+  // useEffect(() => {
+  //   // alert(`hi you click ${count} times`);
+  //   const pakistandiv = document.querySelector("#pakistandiv")
+  //   pakistandiv.style.color = "red"
+  // }, [count])
+
+  // Promise function
+
+  const a = new Promise((resolve, reject) => {
+    setTimeout(() => {
+      let object = {
+        name : "Haris"
+      }
+      resolve(object.name)
+    reject("sorry we got rejected")
+    }, 2000);  
+  })
+  a.then((communicating) => {
+    console.log(`then is used ${communicating}`);
+  }).catch((error) => {
+    console.log(`catch is used ${error}` );
+  })
 
   return (
     <>
@@ -369,13 +386,7 @@ export default function Javascript() {
           <div className="row">
             <div className="col">
               <h1>JavaScript</h1>
-              <div id="pakistandiv">{count}</div>
-              <button
-                onClick={() => {
-                  setCount(count + 1);
-                }}>
-                Count
-              </button>
+             
             </div>
           </div>
         </div>
