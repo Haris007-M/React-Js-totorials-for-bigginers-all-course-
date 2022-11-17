@@ -11,7 +11,9 @@ import "./App.css";
 // import UseEffect from './Components/ReactHooks/UseEffect';
 // import UseRef from './Components/ReactHooks/UseRef';\
 // import Form from "./Components/Form";
-import Javascript from "./Components/Javascript";
+// import Javascript from "./Components/Javascript";
+import NavBar from "./Components/Applications/NavBar";
+import TextForm from "./Components/Applications/TextForm";
 
 
 // export const ThemeContext = React.createContext();
@@ -44,7 +46,9 @@ function App() {
         </button>
       </ThemeContext.Provider> */}
       {/* <Form/> */}
-      <Javascript/>
+      {/* <Javascript/> */}
+      <NavBar label = "GameLog"/>
+      <TextForm/>
       
       
     </>

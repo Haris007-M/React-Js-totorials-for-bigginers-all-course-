@@ -1,6 +1,5 @@
 import React from "react";
 
-
 export default function Javascript() {
   // ____________________
   // Arrow function
@@ -184,7 +183,7 @@ export default function Javascript() {
   // let end;
   // let num = 0;
   // const test = () => {
-  //   const number = document.querySelector("#number");
+  //   const number = document.querySelector("/number");
   //   // number.style.fontsize = "20px";
   //   number.innerHTML = "Loading...";
 
@@ -347,7 +346,7 @@ export default function Javascript() {
 
   //Pakistan API project
 
-  // const pakistandiv = document.querySelector("#pakistandiv")
+  // const pakistandiv = document.querySelector("/pakistandiv")
   // const request = new XMLHttpRequest()
   // request.open('GET',"https://restcountries.com/v2/name/pakistan")
   // request.send()
@@ -358,35 +357,75 @@ export default function Javascript() {
 
   // useEffect(() => {
   //   // alert(`hi you click ${count} times`);
-  //   const pakistandiv = document.querySelector("#pakistandiv")
+  //   const pakistandiv = document.querySelector("/pakistandiv")
   //   pakistandiv.style.color = "red"
   // }, [count])
-
+  //-----------------------------------------------------------------------
   // Promise function
 
-  const a = new Promise((resolve, reject) => {
-    setTimeout(() => {
-      let object = {
-        name : "Haris"
-      }
-      resolve(object.name)
-    reject("sorry we got rejected")
-    }, 2000);  
-  })
-  a.then((communicating) => {
-    console.log(`then is used ${communicating}`);
-  }).catch((error) => {
-    console.log(`catch is used ${error}` );
-  })
+  // const a = new Promise((resolve, reject) => {
+  //   setTimeout(() => {
+  //     let object = {
+  //       name : "Haris"
+  //     }
+  //     resolve(object.name)
+  //   reject("sorry we got rejected")
+  //   }, 2000);
+  // })
+  // a.then((communicating) => {
+  //   console.log(`then is used ${communicating}`);
+  // }).catch((error) => {
+  //   console.log(`catch is used ${error}` );
+  // })
 
   return (
     <>
-      <div className="container-fluid">
-        <div className="container">
-          <div className="row">
-            <div className="col">
-              <h1>JavaScript</h1>
-             
+      <div classNameName="container-fluid">
+        <div classNameName="container">
+          <div classNameName="row">
+            <div classNameName="col">
+              <nav className="navbar navbar-expand-lg bg-light">
+                <div className="container-fluid">
+                  <a className="navbar-brand" href="/">
+                    MOTI-TUDE
+                  </a>
+                  <button
+                    className="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="/navbarNav"
+                    aria-controls="navbarNav"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span className="navbar-toggler-icon"></span>
+                  </button>
+                  <div className="collapse navbar-collapse" id="navbarNav">
+                    <ul className="navbar-nav">
+                      <li className="nav-item">
+                        <a
+                          className="nav-link active"
+                          aria-current="page"
+                          href="/">
+                          Home
+                        </a>
+                      </li>
+                      <li className="nav-item">
+                        <a className="nav-link" href="/">
+                          Features
+                        </a>
+                      </li>
+                      <li className="nav-item">
+                        <a className="nav-link" href="/">
+                          Pricing
+                        </a>
+                      </li>
+                      <li className="nav-item">
+                        <a className="nav-link" href="/">Disabled</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </nav>
             </div>
           </div>
         </div>

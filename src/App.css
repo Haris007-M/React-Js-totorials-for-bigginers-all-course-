@@ -1,29 +1,7 @@
 
-.row{
-border: 1px solid red;
-}
-.col, .col-4, .col-6 {
-  border: 1px solid blue;
-}
-button{
-  /* height: 100px;
-  width: 100px; */
-  font-weight: bolder;
-  text-align: center;
-  font-size: larger;
-  margin: 20px;
-}
-/* UseContext container */
-.container{
-  width:76.5rem;
-  height: 20rem;
-}
 h1{
   color: blue;
   font-family: verdana;
   font-size: 50px;
   text-align: center;
-}
-#figure{
-  border: 1px solid black;
 }
