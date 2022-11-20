@@ -1,13 +1,13 @@
 import React, { useEffect, useState } from "react";
 
 export default function UseEffect() {
-  const [state, setState] = useState(["Posts"]);
+  const [state, setState] = useState("");
   const [items, setItems] = useState([]);
 
   useEffect(() => {
     fetch(`https://jsonplaceholder.typicode.com/${state}`)
-  .then(response => response.json())
-  .then(json => setItems(json))
+    .then(response => response.json())
+      .then(json => setItems(json))
   }, [state]);
 
   return (

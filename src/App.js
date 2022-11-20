@@ -1,5 +1,7 @@
 import React from "react";
 import "./App.css";
+import FullCalculator from "./Components/FullCalculator";
+// import Calculator from "./Components/Calculator";
 // import UseContext from "./Components/ReactHooks/UseContext";
 // import UseState from './Components/ReactHooks/UseState';
 // import InputandSearchApp from './Components/InputandSearchApp';
@@ -9,11 +11,11 @@ import "./App.css";
 // import Jsx from './Components/Jsx';
 // import Event from './Components/Event';
 // import UseEffect from './Components/ReactHooks/UseEffect';
-// import UseRef from './Components/ReactHooks/UseRef';\
+// import UseRef from './Components/ReactHooks/UseRef';
 // import Form from "./Components/Form";
 // import Javascript from "./Components/Javascript";
-import NavBar from "./Components/Applications/NavBar";
-import TextForm from "./Components/Applications/TextForm";
+// import NavBar from "./Components/Applications/NavBar";
+// import TextForm from "./Components/Applications/TextForm";
 
 
 // export const ThemeContext = React.createContext();
@@ -47,8 +49,11 @@ function App() {
       </ThemeContext.Provider> */}
       {/* <Form/> */}
       {/* <Javascript/> */}
-      <NavBar label = "GameLog"/>
-      <TextForm/>
+      {/* <NavBar label = "GameLog"/>
+      <TextForm/> */}
+      {/* <Calculator/> */}
+      <FullCalculator/>
+      
       
       
     </>

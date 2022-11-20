@@ -1,7 +1,84 @@
-
+/* 
 h1{
   color: rgb(0, 0, 255);
   font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   font-size: 40px;
   text-align: center;
+} */
+/* table, td, th {
+  border: 1px solid black;
+}
+
+
+td {
+padding: "10px";
+} */
+
+button {
+  font-size: 1rem;
+  width: 30px;
+  border: 1px solid #d6d6d6;
+}
+
+.App {
+  display: flex;
+  flex-flow: column;
+  width: 100%;
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.display {
+  width: 40%;
+  height: 60px;
+  background: lightgray;
+  padding: 10px;
+  border-radius: 6px;
+  margin: auto;
+}
+
+.expression {
+  height: 30px;
+  color: rgb(170, 170, 170);
+  display: flex;
+  justify-content: center;
+}
+
+.panel {
+  display: flex;
+  justify-content:center;
+  
+}
+
+.numbers {
+  display: flex;
+  flex-flow: wrap;
+  flex-wrap: wrap;
+  justify-items: stretch;
+  width: 90px;
+ 
+  
+}
+
+.numbers button:last-child {
+  /* width: 100%; */
+  background-color: darkblue;
+}
+.numbers button{
+ background-color: darkblue;
+ color: #ffffff;
+ font-weight: bold;
+}
+
+.operators {
+  display: flex;
+  flex-flow: column;
+}
+
+.operators button {
+  color: white;
+  background: #5710db;
+  /* border-left: none; */
+  /* border-bottom: 0; */
+  font-weight: bold;
 }
