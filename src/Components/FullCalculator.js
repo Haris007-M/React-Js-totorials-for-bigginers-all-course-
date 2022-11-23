@@ -35,7 +35,7 @@ export default function FullCalculator() {
     return (
         <>
         <div className="display my-3">{display}</div>
-            {/* <h3></h3> */}
+            
 
             <span className="expression">{expression}</span>
 
@@ -54,6 +54,8 @@ export default function FullCalculator() {
                     <button onClick={() => handleClick(3)}>3</button>
 
                     <button onClick={() => handleClick(0)}>0</button>
+                    <button onClick={() => handleClick()}>Res</button>
+                    
                 </section>
 
                 <section className="operators">

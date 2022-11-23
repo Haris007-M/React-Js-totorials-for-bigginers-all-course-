@@ -1,6 +1,9 @@
+
 import React from "react";
 import "./App.css";
-import FullCalculator from "./Components/FullCalculator";
+import Time from "./Components/Time";
+// import Buttons from "./Components/Buttons";
+// import FullCalculator from "./Components/FullCalculator";
 // import Calculator from "./Components/Calculator";
 // import UseContext from "./Components/ReactHooks/UseContext";
 // import UseState from './Components/ReactHooks/UseState';
@@ -52,9 +55,9 @@ function App() {
       {/* <NavBar label = "GameLog"/>
       <TextForm/> */}
       {/* <Calculator/> */}
-      <FullCalculator/>
-      
-      
+      {/* <FullCalculator/> */}
+      {/* <Buttons/> */}
+      <Time/>
       
     </>
   );
