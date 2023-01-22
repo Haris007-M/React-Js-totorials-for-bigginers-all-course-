@@ -1,27 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>DOM</title>
     <header>Header</header>
-</head>
+  </head>
 
-<body>
-    <h1>Hi This is H1</h1>
-    <div class="col">Hi this is Col-div</div>
-
+  <body>
+    <!-- <h1>Hi This is H1</h1>
+    <div class="col">Hi this is Col-div</div> -->
 
     <script>
-        const documentelement = document.createElement("h2")
-        documentelement.textContent = ("Hi This is H2")
-        document.querySelector("body").appendChild(documentelement)
+      // const numArr = [99, 100, 103];
+      // const missing = [];
 
-        // document.querySelector("body").removeChild(documentelement)
+      // for (i=0; i<numArr.length; i++) { //[0,1,2]
+      //   // get the size of the gap
+      //   let x = numArr[i] - numArr[i - 1]; //-------------------------           numArr[i] = [99,100,103]
+      //                                      //                                    numArr[i - 1] = [undefine, 99, 100]
+      //   // console.log(x);                 //                                    x = [nan, 1, 3]
+      //   let diff = 1;
+      //   // while there's still a gap, push the correct numbers
+      //   // into `missing`, calculated by the number + diff
+      //   while (diff < x) {
+      //     missing.push(numArr[i - 1] + diff);
+      //     // console.log(missing.push(numArr[i - 1] + diff));
+      //     diff++;
+      //   }
+
+      // }
+      // console.log(missing);
+
+      
     </script>
-    
-</body>
-
+  </body>
 </html>
